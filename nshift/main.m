@@ -31,7 +31,7 @@ int main(int argc, const char * argv[]) {
                                 @"       nshift reset   to cycle NightShift (turn it off and on) to help with some external displays",
                                 @""];
 
-        printf([usageLines componentsJoinedByString:@"\n"].UTF8String);
+        printf("%s", [usageLines componentsJoinedByString:@"\n"].UTF8String);
     }
     if ([argument isEqualToString:@"off"]) {
         [client setEnabled:NO];
